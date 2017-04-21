@@ -37,6 +37,7 @@ class App extends React.Component {
           <div className="kolom" />
           <div className="clearfix" />
           <a href="http://google.com">Google</a>
+          <div className="kolom" />
         </div>
       </ReactScrollbar>
     )
