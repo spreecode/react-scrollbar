@@ -248,6 +248,8 @@ class ScrollWrapper extends React.Component {
 
   // DRAG EVENT JUST FOR TOUCH DEVICE~
   startDrag(event) {
+    if (e.target.href) return; // HACK: https://github.com/BosNaufal/react-scrollbar/issues/20
+
     event.preventDefault();
     event.stopPropagation();
 
