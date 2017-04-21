@@ -19,25 +19,8 @@ class App extends React.Component {
     return(
       <ReactScrollbar className="my-scrollbar" style={myScrollbar} ref="Scrollbar">
         <div className="scroll-me">
-          <div className="kolom" />
-          <div className="kolom" />
-          <div className="kolom" />
-          <div className="kolom" />
-          <div className="kolom" />
-          <div className="kolom" />
-          <div className="kolom" />
-          <div className="kolom" />
-          <div className="kolom" />
-          <div className="kolom" />
-          <div className="kolom" />
-          <div className="kolom" />
-          <div className="kolom" />
-          <div className="kolom" />
-          <div className="kolom" />
-          <div className="kolom" />
-          <div className="clearfix" />
           <a href="http://google.com">Google</a>
-          <div className="kolom" />
+          <a href="http://facebook.com">Facebook</a>
         </div>
       </ReactScrollbar>
     )
