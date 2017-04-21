@@ -246,9 +246,14 @@ class ScrollWrapper extends React.Component {
     } else cb();
   }
 
+  inHyperlinkNode(node) {
+    if (!node) return false;
+    return (node.href) ? true : this.inHyperlinkNode(node.parentNode);
+  }
+
   // DRAG EVENT JUST FOR TOUCH DEVICE~
   startDrag(event) {
-    if (e.target.href) return; // HACK: https://github.com/BosNaufal/react-scrollbar/issues/20
+    if (this.inHyperlinkNode(event.target)) return;
 
     event.preventDefault();
     event.stopPropagation();
