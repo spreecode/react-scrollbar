@@ -13,13 +13,14 @@ class App extends React.Component {
     let myScrollbar = {
       width: '35%',
       minWidth: 300,
+      minHeight: 300,
       maxHeight: 450,
       border: '5px #2196F3 solid'
     }
     return(
       <ReactScrollbar className="my-scrollbar" style={myScrollbar} ref="Scrollbar">
         <div className="scroll-me">
-          <a href="http://google.com">Google</a>
+          <a href="http://google.com">Google</a><br />
           <a href="http://facebook.com">Facebook</a>
         </div>
       </ReactScrollbar>
